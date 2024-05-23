@@ -32,7 +32,7 @@ captcha_answers = {}
 def generate_captcha():
     image = Image.new('RGB', (100, 40), color=(255, 255, 255))
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype("arial.ttf", 20)
+    font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 20)
 
     # Генерация случайного текста
     text = ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', k=5))
